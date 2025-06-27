@@ -11,6 +11,17 @@
 <script lang="ts">
     export default {
         name: 'Person',
+        data() {
+            return {
+                name: "zhang-san",
+                age: 19
+            }
+        },
+        methods: {
+            aFun() {
+                console.log('aFun')
+            }
+        },
         setup() {
             // console.log(this)    setup函数中的this是undefined，Vue3中已经弱化了this
             // setup 中定义的属性是非响应式的
